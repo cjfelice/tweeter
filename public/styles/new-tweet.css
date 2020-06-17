@@ -1,0 +1,39 @@
+.new-tweet {
+  background-color: rgb(235, 230, 230);
+  display: flex;
+  padding-top: 20px;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+
+}
+textarea {
+  background: transparent;
+  font-family: Source Sans Pro, sans-serif;
+  width: 550px;
+  max-height: 35px;
+  border: none;
+  outline: 0;
+  border-bottom: 4px solid #545149;
+  resize: none;
+}
+
+.barz {
+  display: flex;
+  padding: 6px;
+  font-family: Bungee, sans-serif;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #4056A1;
+  color: #ffff; 
+  font-size: 18px;
+  font-family: Bungee, sans-serif;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+}

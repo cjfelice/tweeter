@@ -1,0 +1,17 @@
+
+header {
+  background-color: #a0861c;
+  background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  font-size: 30px;
+}
+
+.borderless {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}

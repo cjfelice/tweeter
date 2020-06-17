@@ -16,8 +16,20 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #fffdfb;
   font-size: 24px;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+main {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*
