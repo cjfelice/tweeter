@@ -1,17 +1,17 @@
 .new-tweet {
   background-color: rgb(235, 230, 230);
-  display: flex;
   padding-top: 20px;
-  align-content: center;
-  justify-content: center;
   width: 100%;
+  text-align: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 
 }
 textarea {
   background: transparent;
   font-family: Source Sans Pro, sans-serif;
-  width: 550px;
-  max-height: 35px;
+  width: 90%;
+  max-height: 55px;
   border: none;
   outline: 0;
   border-bottom: 4px solid #545149;
@@ -25,12 +25,12 @@ textarea {
   padding-left: 8px;
   padding-right: 8px;
   padding-bottom: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 button {
   background-color: #4056A1;
-  color: #ffff; 
+  color: #ffff;
   font-size: 18px;
   font-family: Bungee, sans-serif;
   padding: 5px;

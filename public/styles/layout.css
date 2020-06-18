@@ -16,12 +16,13 @@ html {
 
 body {
   color: #545149;
-  background-color: #fffdfb;
+  background-color: #c7c1a9;
   font-size: 24px;
   font-family: Source Sans Pro, sans-serif;
 }
 
 main {
+  padding-top: 15px;
   display: flex;
   margin: auto;
   justify-content: center;

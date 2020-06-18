@@ -1,5 +1,5 @@
 
-header {
+.mainHead {
   background-color: #a0861c;
   background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
   height: 400px;
@@ -9,6 +9,8 @@ header {
   flex-direction: column;
   align-content: center;
   font-size: 30px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 
 .borderless {
