@@ -1,0 +1,10 @@
+$(document).ready(function() {
+  console.log('yomomma');
+  $('#inputBox').on('input', function() {
+    let val = $(this).val();
+    $(this).parent().children().find('.counter').html(140 - val.length);
+    if (140 - val.length < 0) {
+      $(this).parent().children().find('.counter').css('color', 'red');
+    }
+  });
+});
