@@ -37,7 +37,7 @@
   align-items: center;
 }
 
-#tag {
+.tag {
   color: rgb(235, 230, 230);
   display: flex;
   justify-content: center;
@@ -56,6 +56,7 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  word-wrap: break-word;
 }
 
 footer {
@@ -65,8 +66,4 @@ footer {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
-}
-
-.reaction {
-  margin: 6px;
 }

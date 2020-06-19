@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#inputBox').on('input', function() {
+  $('#tweet-text').on('input', function() {
     let val = $(this).val();
     $(this).parent().children().find('.counter').html(140 - val.length);
     if (140 - val.length < 0) {

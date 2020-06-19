@@ -43,11 +43,18 @@ $(document).ready(function() {
     return messageTime;
   };
 
+  const escape =  function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const loadTweets = function() {
       $.getJSON('/tweets')
       .then(function(data) {
         console.log('output :>> ', data);
         $('#tweetZone').empty();
+        console.log(data);
         renderTweets(data);
       })
       .fail(function(output) {
@@ -72,7 +79,7 @@ $(document).ready(function() {
       </div>
       <div class='tag'>${object.user.handle}</div>
       </header>
-      <div class="post">${object.content.text}</div>
+      <div class="post">${escape(object.content.text)}</div>
       <footer>
         <div>${findTweetTime(object.created_at)}</div>
         <div class=“reaction”>
@@ -88,15 +95,23 @@ $(document).ready(function() {
 
   $('.new-tweet').on('submit', function(event) {
     event.preventDefault();
+    const tweetChars = $('#tweet-text').val();
+    if (tweetChars.length === 0 || tweetChars.length === null) {
+      alert('Please enter a bleet.');
+    } else if (tweetChars.length > 140) {
+      alert('Bleeted too much. 140 or less pls.');
+    } else {
     const data = $('#tweet-text').serialize();
     $.post('/tweets', data)
     .then(function(output) {
+      loadTweets();
       console.log('output :>> ', output);
     })
     .fail(function(output) {
       console.log(output);
-    })
-  })
+    });
+  }
+  });
 
   loadTweets();
 
