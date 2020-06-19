@@ -33,6 +33,25 @@ main {
   align-items: center;
 }
 
+.error {
+  color: #c7c1a9;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: #c7c1a9;
+  padding:5px;
+
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    display: flex;
+    padding-top: 120px;
+  }
+
+  main {
+    width: 60%;
+  }
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

@@ -23,78 +23,40 @@
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     <script type="text/javascript" src="/scripts/tweetHover.js"></script>
+    <script type="text/javascript" src="/scripts/hider.js"></script>
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
+  <!--navbar-->
     <nav>
       <span>bleeter</span>
       <div><b>Write</b> a new bleet</div>
     </nav>
-
+  <!--header-->
     <header class='mainHead'>
       <div class='profPic'>
-          <img src="/images/profile-hex.png"> 
+          <img src='/images/profile-hex.png'> 
       </div>
-      <div class="borderless">
+      <div class='borderless'>
           <b>Kid</b> Raggamuffin
       </div>
   </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <form action="/tweets" method="POST">
-          <label for="tweet-text"></label>
-          <textarea name="text" id="tweet-text" placeholder="what are you bleeting about?"></textarea>
-          <div class="barz">
-            <button id='bleetButton' type="submit">Bleet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+  <!--new tweet area-->
+    <main class='container'>
+      <div class='error'></div>
+      <section class='new-tweet'>
+        <form action='/tweets' method='POST'>
+          <label for='tweet-text'></label>
+          <textarea name='text' id='tweet-text' placeholder='what are you bleeting about?'></textarea>
+          <div class='barz'>
+            <button id='bleetButton' type='submit'>Bleet</button>
+            <output name='counter' class='counter' for='tweet-text'>140</output>
           </div>
         </form>
       </section>
+    <!--old tweet area-->
       <section id='tweetZone'>
-        <article class='tweet'>
-          <header>
-            <div id='icon'>
-              <img src="/images/73hZDYK.png"> 
-              <div class='name'>Nanette Headcheese</div>
-          </div>
-          <div class='tag'>@flocka</div>
-          </header>
-          <div class="post">It's better to be a lion for a day than a sheep all your life. It's better to be a lion for a day than a sheep all your life. All your life.</div>
-          <footer>
-            <div>2 hours ago</div>
-            <div class=“reaction”>
-              <img src="/images/iconmonstr-favorite-4-16.png">
-              <img src="/images/iconmonstr-retweet-1-16.png">
-              <img src="/images/iconmonstr-flag-7-16.png">
-            </div>
-          </footer>
-        </article>
-        <article class='tweet'>
-          <header>
-            <div id='icon'>
-              <img src="/images/nlhLi3I.png"> 
-              <div class='name'>Ricardo Schlemp</div>
-          </div>
-          <div class='tag'>@beelzebro</div>
-          </header>
-          <div class="post">Everlasting, the best who ever did it.
-            Holdin the crown down, can't nobody get it.
-            Germany, Italy, France, Japan,
-            London, Africa, bow to the master. The goat.</div>
-          <footer>
-            <div>a day ago</div>
-            <div class=“reaction”>
-              <img src="/images/iconmonstr-favorite-4-16.png">
-              <img src="/images/iconmonstr-retweet-1-16.png">
-              <img src="/images/iconmonstr-flag-7-16.png">
-            </div>
-          </footer>
-        </article>
       </section>
-      
     </main>
   </body>
 </html>

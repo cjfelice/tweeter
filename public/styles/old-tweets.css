@@ -19,12 +19,12 @@
  header {
    display: flex;
    justify-content: space-between;
-  padding: 15px;
+  padding: 10px;
 } 
 
 #icon {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .name {
