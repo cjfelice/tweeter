@@ -3,6 +3,9 @@
 Bleeter is a simple, single-page Twitter clone.
 
 Uses JQuery, html5 and plain ol' CSS3. Allowed for practice of front-end work-flow and exploration of the applicable technologies.
+## Screenshots
+!['wide-mode for tablet and browser'] (https://github.com/cjfelice/tweeter/blob/master/docs/wide.png?raw=true)
+!['slim-mode for mobile and browser'] (https://github.com/cjfelice/tweeter/blob/master/docs/slim.png?raw=true)
 
 ## Getting Started
 
