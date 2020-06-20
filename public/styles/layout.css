@@ -43,6 +43,38 @@ main {
 
 }
 
+.arrow:hover {
+  animation: bounce linear infinite .8s;
+}
+
+@keyframes bounce
+{
+  0%{
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  
+  50%{
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  
+  100%{
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+}
+
+.arrow {
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+  margin-right:20px;
+}
+
+
 @media only screen and (min-width: 900px) {
   body {
     display: flex;
