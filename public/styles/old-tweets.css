@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  font-size: 3vw;
 }
 
 .tweet {
@@ -14,6 +15,7 @@
   justify-content: center;
   align-content: center;
   align-items: center;
+  font-size: 3vw;
 }
 
  header {
@@ -66,4 +68,11 @@ footer {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (min-width: 900px) {
+
+  .tweet {
+    font-size: 2vw;
+  }
 }

@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Bleeter - Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -30,7 +31,11 @@
   <!--navbar-->
     <nav>
       <span>bleeter</span>
-      <div><b>Write</b> a new bleet</div>
+      <div id='new-tweet-button'>
+        <div><b>Utter</b> a new bleet</div>
+        <button id='bouncer'><img src="/images/iconmonstr-arrow-31-16.png" alt=""></button>
+    </div>
+
     </nav>
   <!--header-->
     <header class='mainHead'>
@@ -38,7 +43,7 @@
           <img src='/images/profile-hex.png'> 
       </div>
       <div class='borderless'>
-          <b>Kid</b> Raggamuffin
+          <b>Kid</b> Montelbaum
       </div>
   </header>
   <!--new tweet area-->

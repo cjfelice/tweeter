@@ -17,6 +17,7 @@ html {
 body {
   color: #545149;
   background-color: #c7c1a9;
+  
   font-size: 24px;
   font-family: Source Sans Pro, sans-serif;
 }
@@ -42,7 +43,7 @@ main {
 
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   body {
     display: flex;
     padding-top: 120px;
@@ -51,6 +52,8 @@ main {
   main {
     width: 60%;
   }
+
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

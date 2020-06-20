@@ -10,8 +10,6 @@
   align-content: center;
   font-size: 30px;
   margin-top: 100px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
 }
 
 .borderless {
@@ -23,12 +21,12 @@
   padding-top: 15px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
 
   header {
     margin-top: 5px;
     margin-left: 4%;
-    border-radius: 12px;
+    border-radius: 20px;
   }
 
   .mainHead {

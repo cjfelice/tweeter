@@ -2,7 +2,7 @@
 nav {
   color: #FFFF;
   background-color: #4056A1;
-  font-size: 24px;
+  font-size: 3.6vw;
   height: 100px;
   font-family: Source Sans Pro, sans-serif;
   position: fixed;
@@ -14,8 +14,35 @@ nav {
   padding: 1.5em 1.5em;
 }
 
+#new-tweet-button {
+  cursor: pointer;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#bouncer {
+  animation-name: upDown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes upDown {
+  0% {padding-top: 5px;}
+  50% {padding-top: 8px;}
+  100% {padding-top: 5px;}
+}
+
 span {
   padding-top: 30px;
   font-family: Bungee, sans-serif;
   font-size: 35px;
+}
+
+@media only screen and (min-width: 900px) {
+
+  nav {
+    font-size: 3vw;
+  }
 }
